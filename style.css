@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+i{
+    font-size: x-large;
+    color: whitesmoke;
+    transition: all .3s ease-in-out;
+}
+
+i:hover{
+    transform: scale(1.3);
+    color: #198754;
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+}
+
+/* header specific styles */
+header{
+    background: none;
+}
+/* Add this CSS to your stylesheet */
+.nav-link {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #198754;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .nav-link:hover::before {
+    transform: scaleX(1);
+  }
+  
+
+/* home section specific styles */
+#home{
+    display: flex; flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("images/cptow-bg.jpg") no-repeat fixed center/cover;
+}
+
+.home-text{
+    font-family: "Merriweather", 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    max-width: 40rem;
+    text-align: center;
+    background: rgba(0, 0, 0, .4);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5rem auto 0;
+}
+
+.home-text h1{
+    padding-bottom: 1rem;
+}
+
+.home-btn{
+    margin: 3rem;
+}
+
+.home-btn button{
+    color: whitesmoke;
+}
+
+.social-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.img{
+    border-radius: 10px;
+}
