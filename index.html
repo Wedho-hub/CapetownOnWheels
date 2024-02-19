@@ -26,11 +26,11 @@
 <header class="container-fluid py-3 position-fixed">
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand me-5 me-lg-5" href="#">Cape Town On Wheels</a> <!-- Adjust the margin (me) here -->
+        <img src="images\cptowLogo.jpg" alt="" class="logo">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse me-lg-10" id="navbarTogglerDemo02"> <!-- Adjust the margin (me) here -->
+        <div class="collapse navbar-collapse me-lg-10" id="navbarTogglerDemo02">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-9">
             <li class="nav-item">
               <a class="nav-link" href="#home">Home</a>
@@ -79,19 +79,20 @@
 <!-- home section ends -->
 
 <!-- about section starts -->
-<section id="about" class="container-fluid">
+<section id="about" class="container">
   <h2 class="text-body-emphasis lh-1 fw-bold text-center mt-4">About Us</h2>
   <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-    <div class="col-10 col-sm-8 col-lg-6 img">
+    <div class="col-10 col-sm-12 col-lg-6">
       <img src="https://i.dailymail.co.uk/1s/2019/09/26/09/18955690-7506795-image-a-5_1569487466751.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
     </div>
     <div class="col-lg-6">
       <h4 class="display-5 text-body-emphasis lh-1 mb-3">Reliable, Flexible And Trustworthy</h4>
-      <p class="lead"><strong><b>Cape Town On Wheels Tours Pvt Ltd</b></strong> is a registered company  dedicated to ensuring your comfort, safety
+      <p class="lead"><strong><b>Cape Town On Wheels Tours Pvt Ltd</b></strong> is a company  dedicated to ensuring your comfort, safety
         and satisfaction from the moment you step into one of our vehicles.
       </p>
+      <p class="lead">Registered in South Africa As a touring and taxi comapny under the registration number: <em><b>2023/937216/07</b></em></p>
       <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-        <button type="button" class="btn btn-outline-success btn-lg px-4 me-md-2">toti kudini apa</button>
+        <button type="button" class="btn btn-outline-success btn-lg px-4 me-md-2">Reviews</button>
       </div>
     </div>
   </div>
@@ -99,9 +100,108 @@
 <!-- about section ends -->
 
 <!-- services section starts -->
+<section id="services" class="container">
+  <h2 class="text-body-emphasis lh-1 fw-bold text-center mt-4">Our Services</h2>
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+      <div class="card">
+        <img src="https://blog.mypos.eu/wp-content/uploads/2022/03/how-to-start-taxi-private-hire.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Standard Taxi</h5>
+          <p class="card-text">This is a basic taxi service that can be useful for short trips within the city and even to the outskirts</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://th.bing.com/th/id/OIP.nH0LgpXqcp44GDT0lNdmhAHaFD?rs=1&pid=ImgDetMain" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Airpot Transfers</h5>
+          <p class="card-text">We offer both one-way and round-trip airport transfer services. You wont be late for your flight and we wont let you wait for your ride</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://th.bing.com/th/id/R.a8b0af7dbef6977ece8a6a49a1799537?rik=ke%2fJfi8cB5XWNg&riu=http%3a%2f%2fwww.hikeaddicts.com%2fwp-content%2fuploads%2f2019%2f09%2fCape-Town-tour.jpg&ehk=Sf1Jm25MBmrOL3fF7PDIF%2bmnPK9L2yzBeOArCG7O6%2f0%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">City Tours</h5>
+          <p class="card-text">We offer guided tours around the city, highlighting popular attractions, historical landmarks, and hidden gems.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/83/6d/7c.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Adventure Tours</h5>
+          <p class="card-text">For adventure seekers we offer tours to outdoor adventure destinations such as hiking trails, camping sites, or adrenaline-pumping activities</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://winecountrytable.com/wp-content/uploads/2017/06/2017-6-5-Hawkes-Alexander-Valley-Sonoma-Wineries-Cheese-Pairing-Wine-Tasting-BLOG-SIZE-2584.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Wine And Brewery</h5>
+          <p class="card-text">Wine, beer, cocktails, spirits testing tours while enjoying safe transportation</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://www.holidayapartments.co.za/blog/wp-content/uploads/2017/10/va.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Customized Tours</h5>
+          <p class="card-text">Create your own tour based on your unique itenarary, preferences and interests. Markets, malls, concerts etc.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <!-- services section ends -->
 
 <!-- reviews section starts -->
+<section class="container">
+  <div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="..." class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="..." class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="..." class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
 <!-- reviews section ends -->
 
 <!-- contact section starts -->

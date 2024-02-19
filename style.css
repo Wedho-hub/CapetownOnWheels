@@ -3,8 +3,12 @@
     margin: 0;
 }
 
+body{
+    background: rgb(226, 231, 231);
+}
+
 i{
-    font-size: x-large;
+    font-size: xx-large;
     color: whitesmoke;
     transition: all .3s ease-in-out;
 }
@@ -17,12 +21,21 @@ i:hover{
 section{
     height: 100vh;
     width: 100%;
+    padding: 2rem;
 }
 
 /* header specific styles */
 header{
     background: none;
+    z-index: 2;
+    background: none;
 }
+
+.logo{
+    width: 6rem; height: auto;
+    margin: .5rem 6rem .5rem 3rem;
+}
+
 /* Add this CSS to your stylesheet */
 .nav-link {
     position: relative;
@@ -48,6 +61,7 @@ header{
 
 /* home section specific styles */
 #home{
+    height: auto;
     display: flex; flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -57,7 +71,7 @@ header{
 .home-text{
     font-family: "Merriweather", 'Times New Roman', Times, serif;
     color: whitesmoke;
-    max-width: 40rem;
+    max-width: 30rem;
     text-align: center;
     background: rgba(0, 0, 0, .4);
     border-radius: 10px;
@@ -83,10 +97,22 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 1.5rem;
-    margin-top: 2rem;
+    gap: 3rem;
+    margin: 1rem;
 }
 
-.img{
+/* about specific styles */
+img{
     border-radius: 10px;
+}
+
+#about {
+    height: auto;
+    background: whitesmoke;
+}
+
+/* services specific styles */
+#services{
+    background: gainsboro;
+    height: auto;
 }
