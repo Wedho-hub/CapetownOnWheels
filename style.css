@@ -4,24 +4,43 @@
 }
 
 body{
-    background: rgb(226, 231, 231);
+    background: rgb(233, 247, 247);
 }
 
 i{
     font-size: xx-large;
-    color: whitesmoke;
-    transition: all .3s ease-in-out;
+    color: goldenrod;
 }
 
-i:hover{
-    transform: scale(1.3);
-    color: #198754;
+.social-links a .fa-brands{
+    transition: all 0.3s ease-in-out;
+}
+
+.social-links a .fa-brands:hover{
+    transform: scale(1.2);
+    color: rgb(145, 111, 28);
 }
 
 section{
     height: 100vh;
     width: 100%;
     padding: 2rem;
+}
+
+.carousel-caption{
+    background: rgba(0, 0, 0, .4);
+    border-radius: 70%;
+}
+
+.btn-outline-success {
+    color: darkgoldenrod;
+    border-color: darkgoldenrod;
+}
+
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: darkgoldenrod;
+    border-color: darkgoldenrod;
 }
 
 /* header specific styles */
@@ -47,9 +66,9 @@ header{
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 4rem;
     height: 3px;
-    background-color: #198754;
+    background-color: darkgoldenrod;
     transform: scaleX(0);
     transition: transform 0.3s ease;
   }
@@ -73,7 +92,7 @@ header{
     color: whitesmoke;
     max-width: 30rem;
     text-align: center;
-    background: rgba(0, 0, 0, .4);
+    background: rgba(0, 0, 0, .2);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -83,6 +102,11 @@ header{
 
 .home-text h1{
     padding-bottom: 1rem;
+    font-family: "Merriweather", serif;
+}
+
+.home-text p{
+    font-family: "Montserrat", sans-serif;
 }
 
 .home-btn{
@@ -115,4 +139,84 @@ img{
 #services{
     background: gainsboro;
     height: auto;
+}
+
+/* gallery specific styles */
+#gallery{
+    background: gainsboro;
+    height: auto;
+}
+
+/* features section */
+#features{
+    padding: 2rem;
+    height: auto;
+}
+
+.testimonial {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.testimonial p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.testimonial .author {
+    font-weight: bold;
+    color: #333;
+}
+
+.testimonial .location {
+    font-style: italic;
+    color: #777;
+}
+
+/* contact section */
+#contact {
+    padding: 50px 0;
+    text-align: center;
+    height: auto;
+}
+
+.contact-heading {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-image {
+    margin-top: 30px;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .contact-image {
+        max-width: 80%;
+    }
 }
