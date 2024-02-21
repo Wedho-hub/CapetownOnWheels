@@ -103,6 +103,7 @@ header{
 .home-text h1{
     padding-bottom: 1rem;
     font-family: "Merriweather", serif;
+    color: whitesmoke;
 }
 
 .home-text p{
