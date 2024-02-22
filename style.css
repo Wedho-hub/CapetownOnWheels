@@ -49,14 +49,39 @@ header{
     z-index: 2;
     background: none;
     padding: 1.5rem;
+    width: 80%;
 }
 
-.logo{
+.navbar .container-fluid {
+    position: relative;
+    margin: auto;
+}
+
+.brand{
     width: 6rem; height: auto;
-    margin: .5rem 5rem .5rem 3rem;
+    position: relative;
+    left: 3rem;
+    margin: .4rem;
 }
 
-/* Add this CSS to your stylesheet */
+.navbar-toggler {
+    position: relative;
+    right: 4rem;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 2rem;
+}
+
+.navbar-collapse {
+    margin-left: 0;
+}
+
+.form-inline {
+    margin-left: 1rem;
+}
+
 .nav-link {
     position: relative;
     overflow: hidden;
@@ -143,6 +168,11 @@ img{
     height: auto;
 }
 
+.card img{
+    width: 100%;
+    height: 45vh;
+}
+
 /* gallery specific styles */
 #gallery{
     background: gainsboro;
@@ -217,9 +247,30 @@ img{
     height: auto;
 }
 
+/* footer specific */
+footer {
+    background: linear-gradient(180deg, rgb(104, 104, 104) 3%, rgb(47, 47, 47) 23%, rgba(5, 5, 5, 1) 56%);
+}
+
+.logo {
+    margin-bottom: 1.5rem;
+}
+
+.logo-img {
+    width: 25%;
+    height: 60%;
+    margin: 1rem .5rem 0;
+    padding-bottom: 0;
+}
+
 @media (max-width: 768px) {
     .contact-image {
         max-width: 80%;
+    }
+
+    .logo-img{
+        width: 30%;
+        height: 55%;
     }
 }
 
