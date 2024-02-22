@@ -274,6 +274,19 @@ footer {
     }
 }
 
+@media (max-width: 500px) {
+    .brand{
+        position: relative;
+        left: .5rem;
+        margin: .4rem;
+    }
+    
+    .navbar-toggler {
+        position: relative;
+        right: .5rem;
+    }
+}
+
 @media (min-width: 900px) {
     .contact-image {
         max-width: 70%;
