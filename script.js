@@ -13,3 +13,9 @@ const openWhatsApp = () => {
     const phoneNumber = "+27813872713";
     window.open(`https://wa.me/${phoneNumber}`, "_blank");
 };
+
+const showModal = () => {
+    // Show the modal
+    const myModal = new bootstrap.Modal(document.getElementById('developmentModal'));
+    myModal.show();
+  };

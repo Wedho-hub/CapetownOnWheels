@@ -24,7 +24,7 @@
 <body>
 <!-- header section  starts-->
 <header class="container-fluid py-3 position-fixed">
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary py-0 px-auto">
       <div class="container-fluid">
         <img src="images\cptowLogo.jpg" alt="" class="logo">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -94,9 +94,9 @@
       <p class="lead"><strong><b>Cape Town On Wheels Tours Pvt Ltd</b></strong> is a company  dedicated to ensuring your comfort, safety
         and satisfaction from the moment you step into one of our vehicles.
       </p>
-      <p class="lead">Registered in South Africa As a touring and taxi comapny under the registration number: <em><b>2023/937216/07</b></em></p>
+      <p class="lead">Registered in South Africa As a touring and taxi company under the registration number: <em><b>2023/937216/07</b></em></p>
       <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-        <button type="button" class="btn btn-outline-success btn-lg px-4 me-md-2">Enquire</button>
+        <button type="button" class="btn btn-outline-success btn-lg px-4 me-md-2" onclick="openWhatsApp()">Enquire</button>
       </div>
     </div>
   </div>
@@ -169,7 +169,7 @@
 <section id="features" class="container">
   <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
     <div class="feature col">
-      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
         <i class="fa-solid fa-money-bills"></i>
       </div>
       <h3 class="fs-2 text-body-emphasis">Cash</h3>
@@ -180,14 +180,14 @@
         <i class="fa-solid fa-credit-card"></i>
       </div>
       <h3 class="fs-2 text-body-emphasis">Credit/Debts Cards</h3>
-      <p>Do you want to make your payments using your credit/debit? We accept and fascilitate card payments for your convenience</p>
+      <p>Do you want to make your payments using your credit/debit? We accept and fascilitate card payments for your convenience.</p>
     </div>
     <div class="feature col">
-      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
         <i class="fa-solid fa-wheelchair"></i>
       </div>
       <h3 class="fs-2 text-body-emphasis">Special Needs</h3>
-      <p>Experienced in </p>
+      <p>Experienced in travelling with people with special needs, chidren and the elderly. We provide assistance for wheelchairs and strollers.</p>
     </div>
   </div>
 </section>
@@ -206,54 +206,56 @@
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
     </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="10000">
-        <img src="https://cdn.getyourguide.com/img/tour/64a69e5666f9e.jpeg/146.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-md-block">
-          <h5><i class="fa-solid fa-location-dot"></i> Atlantis Dunes</h5>
-          <p>Enjoy quad biking, sand boarding, hiking, bird watching, star gazing etc.</p>
+    <div class="container">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="https://cdn.getyourguide.com/img/tour/64a69e5666f9e.jpeg/146.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-md-block">
+            <h5><i class="fa-solid fa-location-dot"></i> Atlantis Dunes</h5>
+            <p>Enjoy quad biking, sand boarding, hiking, bird watching, star gazing etc.</p>
+          </div>
         </div>
-      </div>
-      <div class="carousel-item" data-bs-interval="2000">
-        <img src="https://sncdn.com/imagecache/db/id/658248/go159029.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-md-block">
-          <h5><i class="fa-solid fa-location-dot"></i> Hout Bay</h5>
-          <p>Chapman's peak drive, seal island, scuba diving, horse riding, hiking, World of birds etc</p>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="https://sncdn.com/imagecache/db/id/658248/go159029.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-md-block">
+            <h5><i class="fa-solid fa-location-dot"></i> Hout Bay</h5>
+            <p>Chapman's peak drive, seal island, scuba diving, horse riding, hiking, World of birds etc</p>
+          </div>
         </div>
-      </div>
-      <div class="carousel-item">
-        <img src="https://images.mapsofworld.com/travel-blog/Boulders-Beach.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-md-block">
-          <h5><i class="fa-solid fa-location-dot"></i> Simon's Town</h5>
-          <p>Boulder's Beach, penguin sanctuary, whale watching, hiking, museums, kayaking etc</p>
+        <div class="carousel-item">
+          <img src="https://images.mapsofworld.com/travel-blog/Boulders-Beach.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-md-block">
+            <h5><i class="fa-solid fa-location-dot"></i> Simon's Town</h5>
+            <p>Boulder's Beach, penguin sanctuary, whale watching, hiking, museums, kayaking etc</p>
+          </div>
         </div>
-      </div>
-      <div class="carousel-item">
-        <img src="https://capetowntransfersandtours.co.za/wp-content/uploads/2018/04/Baboons-at-Cape-Point-Nature-Reserve.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-md-block">
-          <h5><i class="fa-solid fa-location-dot"></i> Cape Point</h5>
-          <p>Stunning coastal views, Diaz beach, the funicular ride to the lighthouse, hiking, wildlife etc.</p>
+        <div class="carousel-item">
+          <img src="https://capetowntransfersandtours.co.za/wp-content/uploads/2018/04/Baboons-at-Cape-Point-Nature-Reserve.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-md-block">
+            <h5><i class="fa-solid fa-location-dot"></i> Cape Point</h5>
+            <p>Stunning coastal views, Diaz beach, the funicular ride to the lighthouse, hiking, wildlife etc.</p>
+          </div>
         </div>
-      </div>
-      <div class="carousel-item">
-        <img src="https://www.weather2travel.com/images_blog/ostrich-riding.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-md-block">
-          <h5><i class="fa-solid fa-location-dot"></i> Ostrich farm</h5>
-          <p> Ostrich feeding and petting, ostrich riding, restaurant, picnic areas, gift shop etc.</p>
+        <div class="carousel-item">
+          <img src="https://www.weather2travel.com/images_blog/ostrich-riding.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-md-block">
+            <h5><i class="fa-solid fa-location-dot"></i> Ostrich farm</h5>
+            <p> Ostrich feeding and petting, ostrich riding, restaurant, picnic areas, gift shop etc.</p>
+          </div>
         </div>
-      </div>
-      <div class="carousel-item">
-        <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/06/71/e9/16.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-md-block">
-          <h5><i class="fa-solid fa-location-dot"></i> Table Mountain</h5>
-          <p>Cable car riding, abseiling, bird watching, hiking, rock climbing etc.</p>
+        <div class="carousel-item">
+          <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/06/71/e9/16.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-md-block">
+            <h5><i class="fa-solid fa-location-dot"></i> Table Mountain</h5>
+            <p>Cable car riding, abseiling, bird watching, hiking, rock climbing etc.</p>
+          </div>
         </div>
-      </div>
-      <div class="carousel-item">
-        <img src="https://i.pinimg.com/originals/bb/da/33/bbda33b2fb0fc95ee15e18ba611a6a4e.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-md-block">
-          <h5><i class="fa-solid fa-location-dot"></i> Cape Agulhas</h5>
-          <p>Whale watching, De Mond nature reserve, hiking, Struisbaai Beach, tip of Africa etc.</p>
+        <div class="carousel-item">
+          <img src="https://i.pinimg.com/originals/bb/da/33/bbda33b2fb0fc95ee15e18ba611a6a4e.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-md-block">
+            <h5><i class="fa-solid fa-location-dot"></i> Cape Agulhas</h5>
+            <p>Whale watching, De Mond nature reserve, hiking, Struisbaai Beach, tip of Africa etc.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -312,7 +314,7 @@
           <input type="tel" name="phone" placeholder="Phone Number" required><br>
           <input type="email" name="email" placeholder="Email" required><br>
           <textarea name="message" placeholder="Message" required></textarea><br>
-          <button type="button" class="btn btn-outline-success btn-lg px-4 me-md-2">Submit</button>
+          <button type="submit" class="btn btn-outline-success btn-lg px-4 me-md-2" onclick="showModal()">Submit</button>
       </form>
       </div>    
       </div>
@@ -357,6 +359,22 @@
   <!-- custom JS -->
   <script src="script.js"></script>
 
+  <!-- Modal -->
+<div class="modal" id="developmentModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h5 class="modal-title">Website Still Being Developed</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <!-- Modal Body -->
+      <div class="modal-body">
+        This website is still under development. For inquiries, please contact us on WhatsApp.
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>

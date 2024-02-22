@@ -48,11 +48,12 @@ header{
     background: none;
     z-index: 2;
     background: none;
+    padding: 1.5rem;
 }
 
 .logo{
     width: 6rem; height: auto;
-    margin: .5rem 6rem .5rem 3rem;
+    margin: .5rem 5rem .5rem 3rem;
 }
 
 /* Add this CSS to your stylesheet */
@@ -219,5 +220,16 @@ img{
 @media (max-width: 768px) {
     .contact-image {
         max-width: 80%;
+    }
+}
+
+@media (min-width: 900px) {
+    .contact-image {
+        max-width: 70%;
+    }
+
+    .carousel-item img {
+        max-height: 500px !important;
+        width: auto;
     }
 }
