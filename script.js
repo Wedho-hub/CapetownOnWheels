@@ -10,7 +10,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 const openWhatsApp = () => {
-    const phoneNumber = "+27813872713";
+    const phoneNumber = "+27840567550";
     window.open(`https://wa.me/${phoneNumber}`, "_blank");
 };
 
